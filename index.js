@@ -38,7 +38,6 @@ Airplane.prototype.land = function () {
     - Give instances of Person a method `.toString()`:
         + It should return a string with `name` and `age`. Example: "Mary, 50"
 */
-
   function Person(name, age) {
     this.name = name;
     this.age = age;
@@ -93,8 +92,6 @@ Car.prototype.drive = function(distance) {
   this.tank -= distance * (1 / this.milesPerGallon);
 };
 
-  
-
 /*
   TASK 3
     - Write a Baby constructor subclassing Person.
@@ -113,14 +110,14 @@ Baby.prototype.play = function() {
   return `Playing with ${this.favoriteToy}`;
 };
 
-
 /* 
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. Window binding: an object to borrow a method from another object without making a copy of that method
+  2. Implicit binding; when you invoke a function in an object using the dot notation
+  3. New binding: whenever a constructor function is implemented 'this' points to a newly created object. 
+  4. Explicit binding : .call, .apply, .bind
+  
 */
 
 
